@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/botstrap_modified.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
+
+    <title>Big10 Volleyball Analytics</title>
+
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">BIG10 Volleyball Analytics</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars ms-1"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">Data</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#new">Analytics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">Volleyball Terminology</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#app">Team</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="body">
+            <video class="video-background" autoplay loop muted>
+              <source src="assests/insta_video_89705.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="content">
+              <span>Exploration of</span>
+              <img class="logo" src="assests/Big-Ten-Conference-logo.jpg" alt="Data Source"> 
+              <h1 class="bordered-text">
+               VOLLEYBALL
+              </h1>
+          </div>
+          
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="data-discover" id="about">
+      <h2 class="section-heading text-uppercase">About the <span class="hi-yall">Data </span></h2>
+      <div class="bubbles-container">
+          <div class="bubble">
+              <img src="assests/data_source.jpg" alt="Data Source">
+              <h3>Data Source</h3>
+              <p class="text-muted"> We collected data on player performance, team standings, and match outcomes from official Big Ten conference records and statistics databases to ensure the accuracy and reliability of our sources for meaningful analysis.</p>
+          </div>
+  
+          <div class="bubble">
+              <img src="assests/timeline.jpg" alt="Data Timeline">
+              <h3>Data Timeline</h3>
+              <p class="text-muted">Our analysis covers data from 2016 to 2022, focusing on the more recent years to apply for today's context. Over those years we collected 17 statistics for each team.</p>
+          </div>
+  
+          <div class="bubble">
+              <img src="assests/purpose.jpg" alt="Purpose">
+              <h3>Purpose</h3>
+              <p class="text-muted">Our goal is to empower coaches and schools with a tool that enhances decision-making in recruiting and coaching by analyzing player performance to set strategic goals and recruit players based on their playing style. </p>
+          </div>
+      </div>
+  </div>
+  
+    <div class="divider"></div>
+
+    <div class="discover" id="new">
+        <h2> <span class="hi-yall">Analytics </span>Over 2016-2022</h2>
+        <p class="text-muted">The dashboard visualizes the correlation between two team statistics by plotting them against each other on the x and y-axis. Each team statistic is averaged across the chosen time period. Points are color coded by number of wins. Data can be filtered by year.</p>
+    </div>
+
+    <div>
+      <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+        <tableau-viz id="tableauViz"  class="scatter_plot"     
+          src='https://public.tableau.com/views/VolleyballRound2/TimeSeriesRemoved?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link'
+          device="default"
+          toolbar="bottom" hide-tabs>
+        </tableau-viz> 
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-grid-gutter">
+          <a class="card border-0 shadow" href="page2.html">
+              <img class="card-img-top" src="assests/volleyball_wisco.jpg" alt="Setting">
+              <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Correlation Matrix</h3>
+              </div>
+          </a>
+      </div>
+      <div class="col-md-6 mb-grid-gutter">
+          <a class="card border-0 shadow" href="page3.html">
+              <img class="card-img-top" src="assests/volleyball_boil.jpg" alt="Food Name">
+              <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">TIme Series Plot</h3>
+              </div>
+          </a>
+      </div>
+  </div>
+  
+
+    <div class="divider"></div>
+
+    <div class="topdishes" id="menu">
+        <h2> <span class="hi-yall"> Volleyball Terms</span> for Background</h2>
+
+        <div class="row card-dishes">
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="assests/vb_setting.jpg" alt="Setting">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Setting/ Assists</h3>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"><img class="card-img-top" src="assests/vb_dig.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Dig</h3>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="assests/vb_block.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Block Assist</h3>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="assests/vb_kill.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Kill/Hit</h3>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"><img class="card-img-top" src="assests/vb_serve.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Serve</h3>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"><img class="card-img-top" src="assests/vb_blocksolo.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Block Solo</h3>
+                </div></a></div>
+          </div>
+    </div>
+    <div class="divider"></div>
+
+    
+    <div class="app" id="app">
+      <div class="left">
+          <h2>The Team</h2>
+          <h3 class="section-subheading text-muted">UC Berkeley MIDS Data Scientists</h3>
+          <div class="row card-dishes">
+              <div class="col-md-4 col-sm-6 mb-grid-gutter">
+                  <a class="card border-0 shadow" href="https://www.linkedin.com/in/nomita-chandra/">
+                      <img class="card-img-top" src="assests/profile_pic.jpg" alt="Setting">
+                      <div class="card-body py-4 text-center">
+                          <h3 class="h5 mt-1">Nomita Chandra</h3>
+                          <img src="assests/linkdin.jpg" alt="LinkedIn" style="width: 50px; height: auto;">
+                      </div>
+                  </a>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-grid-gutter">
+                  <a class="card border-0 shadow" href="https://www.linkedin.com/in/geronimowalker/">
+                      <img class="card-img-top" src="assests/geronimo.jpg" alt="Food Name">
+                      <div class="card-body py-4 text-center">
+                          <h3 class="h5 mt-1">Geronimo Walker</h3>
+                          <img src="assests/linkdin.jpg" alt="LinkedIn" style="width: 50px; height: auto;">
+                      </div>
+                  </a>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-grid-gutter">
+                  <a class="card border-0 shadow" href="https://www.linkedin.com/in/nikita-chauhan-cal/">
+                      <img class="card-img-top" src="assests/nikita.jpg" alt="Food Name">
+                      <div class="card-body py-4 text-center">
+                          <h3 class="h5 mt-1">Nikita Chauhan</h3>
+                          <img src="assests/linkdin.jpg" alt="LinkedIn" style="width: 50px; height: auto;">
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+              
+    <div class="divider"></div>
+    <div class="footer">
+        <footer>
+            UC Berkeley MIDS 2024
+        </footer>
+    </div>
+    <script src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

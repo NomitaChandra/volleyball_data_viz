@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+
+    <title>Big10 Volleyball - Time Series</title>
+</head>
+<body>
+  <h1 style="font-family: 'Bungee', sans-serif;">Time Series (2016-2022)!</h1>
+    <p class="text-muted">The time series plot shows a yearly ranking of teams in descending order of a chosen statistic. Use the highlight team filter to see a team’s trend over the 7-year period.</p>
+    <div>
+        <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+          <tableau-viz id="tableauViz"  class="scatter_plot"     
+            src='https://public.tableau.com/views/VolleyballRound2/NewPrototypeDashboard2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link'
+            device="default"
+            toolbar="bottom" hide-tabs>
+          </tableau-viz> 
+      </div>
+    <a href="index.html">Back to Home Page</a>
+</body>
+</html>
